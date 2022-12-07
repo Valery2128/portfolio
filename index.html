@@ -268,7 +268,7 @@
           </div>
 
           <div class="col derecha">
-            <h3>Work experience</h3>
+            <h3>Experiencia de trabajo</h3>
             <div class="item der">
               <h4>Analista programador jr</h4>
               <span class="casa">IPS SANISALUD SAS </span>
@@ -391,23 +391,24 @@
         <h2>CONTACTO</h2>
         <div class="fila">
           <!-- Formulario -->
+          <form action="enviar.php" method="post">
           <div class="col">
-            <input type="text" placeholder="Tú Nombre" />
-            <input type="text" placeholder="Número telefónico" />
-            <input type="text" placeholder="Dirección de correo" />
-            <input type="text" placeholder="Tema" />
+            <input type="text" name="nombre" placeholder="Tú Nombre" required/>
+            <input type="text" name="telefono" placeholder="Número telefónico" required />
+            <input type="text" name="correo" placeholder="Dirección de correo" required />
+            <input type="text" name="asunto" placeholder="Tema" required/>
             <textarea
               name=""
               id=""
               cols="30"
               rows="10"
-              placeholder="Mensaje"
+               name="mensaje"placeholder="Mensaje" required
             ></textarea>
-            <button>
-              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+            <button type="submit" value="ENVIAR" id="boton"> Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
           </div>
+          </form>
           <!-- Mapa -->
           <div class="col">
             <img src="img/local.png" alt="500" width="" />
