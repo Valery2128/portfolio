@@ -394,8 +394,8 @@
           <form action="enviar.php" method="post">
           <div class="col">
             <input type="text" name="nombre" placeholder="Tú Nombre" required/>
-            <input type="text" name="telefono" placeholder="Número telefónico" required />
-            <input type="text" name="correo" placeholder="Dirección de correo" required />
+            <input type="number" name="telefono" placeholder="Número telefónico" required />
+            <input type="email" name="correo" placeholder="Dirección de correo" required />
             <input type="text" name="asunto" placeholder="Tema" required/>
             <textarea
               name=""
@@ -404,7 +404,7 @@
               rows="10"
                name="mensaje"placeholder="Mensaje" required
             ></textarea>
-            <button type="submit" value="ENVIAR" id="boton"> Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+            <button type="submit" value="enviar" id="boton"> Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
           </div>
